@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
+    int turnsCounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,19 +52,47 @@ public class MainActivity extends AppCompatActivity {
         ImageView Xplay = findViewById(R.id.Xplay);
         ImageView Xwin =findViewById(R.id.Xwins);
         ImageView Owin =findViewById(R.id.Owins);
-        ImageView noWinner =findViewById(R.id.No_Winner);
-        int turnsCounter = 0;
+//        ImageView noWinner =findViewById(R.id.No_Winner);
+        boolean flag_win = false;
 
         cell1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int y =0 ;
+                if(Xcell1.getVisibility() == View.INVISIBLE){
+                    if(Ocell1.getVisibility() == View.INVISIBLE) {
+                        if(turnsCounter % 2==0){
+                            Xcell1.setVisibility(View.VISIBLE);
+                            Xplay.setVisibility(View.INVISIBLE);
+                            Oplay.setVisibility(View.VISIBLE);
+                        }
+                        else{
+                            Ocell1.setVisibility(View.VISIBLE);
+                            Oplay.setVisibility(View.INVISIBLE);
+                            Xplay.setVisibility(View.VISIBLE);
+                        }
+                        ++turnsCounter;
+                    }
+                }
+
                 Xcell1.setVisibility(View.VISIBLE);
                 Xplay.setVisibility(View.INVISIBLE);
                 Oplay.setVisibility(View.VISIBLE);
 
             }
         });
-//        while(turnsCounter < 9);
+
+        while(turnsCounter < 9 && !flag_win){
+            if(turnsCounter > 4);
+//                flag_win = checkWinner();
+        }
+
+        if(!flag_win){
+            findViewById(R.id.No_Winner).setVisibility(View.VISIBLE);
+            Xplay.setVisibility(View.INVISIBLE);
+        }
+
+
 
     }
 }
