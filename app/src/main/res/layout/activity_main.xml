@@ -322,4 +322,39 @@
         app:layout_constraintTop_toTopOf="@+id/cell_7"
         app:srcCompat="@drawable/o" />
 
+    <ImageView
+        android:id="@+id/Oplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Xplay"
+        app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintStart_toStartOf="@+id/Xplay"
+        app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:srcCompat="@drawable/oplay" />
+
+    <ImageView
+        android:id="@+id/Owins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Xplay"
+        app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintStart_toStartOf="@+id/Xplay"
+        app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:srcCompat="@drawable/owin" />
+
+    <ImageView
+        android:id="@+id/Xwins"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Xplay"
+        app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintStart_toStartOf="@+id/Xplay"
+        app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:srcCompat="@drawable/xwin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
