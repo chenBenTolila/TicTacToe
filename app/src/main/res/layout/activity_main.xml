@@ -256,4 +256,70 @@
         app:layout_constraintTop_toTopOf="@+id/cell_5"
         app:srcCompat="@drawable/x" />
 
+    <ImageView
+        android:id="@+id/X_cell_6"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_6"
+        app:layout_constraintEnd_toEndOf="@+id/cell_6"
+        app:layout_constraintStart_toStartOf="@+id/cell_6"
+        app:layout_constraintTop_toTopOf="@+id/cell_6"
+        app:srcCompat="@drawable/x" />
+
+    <ImageView
+        android:id="@+id/O_cell_6"
+        android:layout_width="121dp"
+        android:layout_height="119dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_6"
+        app:layout_constraintEnd_toEndOf="@+id/cell_6"
+        app:layout_constraintStart_toStartOf="@+id/cell_6"
+        app:layout_constraintTop_toTopOf="@+id/cell_6"
+        app:srcCompat="@drawable/o" />
+
+    <ImageView
+        android:id="@+id/X_cell_7"
+        android:layout_width="122dp"
+        android:layout_height="118dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_7"
+        app:layout_constraintEnd_toEndOf="@+id/cell_7"
+        app:layout_constraintStart_toStartOf="@+id/cell_7"
+        app:layout_constraintTop_toTopOf="@+id/cell_7"
+        app:srcCompat="@drawable/x" />
+
+    <ImageView
+        android:id="@+id/O_cell_4"
+        android:layout_width="126dp"
+        android:layout_height="119dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_4"
+        app:layout_constraintEnd_toEndOf="@+id/cell_4"
+        app:layout_constraintStart_toStartOf="@+id/cell_4"
+        app:layout_constraintTop_toTopOf="@+id/cell_4"
+        app:srcCompat="@drawable/o" />
+
+    <ImageView
+        android:id="@+id/O_cell_5"
+        android:layout_width="125dp"
+        android:layout_height="121dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_5"
+        app:layout_constraintEnd_toEndOf="@+id/cell_5"
+        app:layout_constraintStart_toStartOf="@+id/cell_5"
+        app:layout_constraintTop_toTopOf="@+id/cell_5"
+        app:srcCompat="@drawable/o" />
+
+    <ImageView
+        android:id="@+id/O_cell_7"
+        android:layout_width="123dp"
+        android:layout_height="120dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_7"
+        app:layout_constraintEnd_toEndOf="@+id/cell_7"
+        app:layout_constraintStart_toStartOf="@+id/cell_7"
+        app:layout_constraintTop_toTopOf="@+id/cell_7"
+        app:srcCompat="@drawable/o" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
