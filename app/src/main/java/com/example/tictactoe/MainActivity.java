@@ -17,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
     private void LetsPlay()
     {
         ImageView cell1 =findViewById(R.id.cell_1);
+        ImageView cell2 =findViewById(R.id.cell_2);
+        ImageView cell3 =findViewById(R.id.cell_3);
+        ImageView cell4 =findViewById(R.id.cell_4);
+        ImageView cell5 =findViewById(R.id.cell_5);
+        ImageView cell6 =findViewById(R.id.cell_6);
+        ImageView cell7 =findViewById(R.id.cell_7);
+        ImageView cell8 =findViewById(R.id.cell_8);
+        ImageView cell9 =findViewById(R.id.cell_9);
         ImageView Xcell1 =findViewById(R.id.X_cell_1);
         ImageView Xcell2 =findViewById(R.id.X_cell_2);
         ImageView Xcell3 =findViewById(R.id.X_cell_3);
@@ -26,6 +34,19 @@ public class MainActivity extends AppCompatActivity {
         ImageView Xcell7 =findViewById(R.id.X_cell_7);
         ImageView Xcell8 =findViewById(R.id.X_cell_8);
         ImageView Xcell9 =findViewById(R.id.X_cell_9);
+
+        ImageView Ocell1 =findViewById(R.id.O_cell_1);
+        ImageView Ocell2 =findViewById(R.id.O_cell_2);
+        ImageView Ocell3 =findViewById(R.id.O_cell_3);
+        ImageView Ocell4 =findViewById(R.id.O_cell_4);
+        ImageView Ocell5 =findViewById(R.id.O_cell_5);
+        ImageView Ocell6 =findViewById(R.id.O_cell_6);
+        ImageView Ocell7 =findViewById(R.id.O_cell_7);
+        ImageView Ocell8 =findViewById(R.id.O_cell_8);
+        ImageView Ocell9 =findViewById(R.id.O_cell_9);
+
+
+
         ImageView Oplay = findViewById(R.id.Oplay);
         ImageView Xplay = findViewById(R.id.Xplay);
         ImageView Xwin =findViewById(R.id.Xwins);
