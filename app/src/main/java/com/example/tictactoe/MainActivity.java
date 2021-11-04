@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         ImageView Xcell7 =findViewById(R.id.X_cell_7);
         ImageView Xcell8 =findViewById(R.id.X_cell_8);
         ImageView Xcell9 =findViewById(R.id.X_cell_9);
-
         ImageView Ocell1 =findViewById(R.id.O_cell_1);
         ImageView Ocell2 =findViewById(R.id.O_cell_2);
         ImageView Ocell3 =findViewById(R.id.O_cell_3);
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         cell1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int y =0 ;
+
                 if(Xcell1.getVisibility() == View.INVISIBLE){
                     if(Ocell1.getVisibility() == View.INVISIBLE) {
                         if(turnsCounter % 2==0){
@@ -82,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        while(turnsCounter < 9 && !flag_win){
-            if(turnsCounter > 4);
-//                flag_win = checkWinner();
-        }
+//        while(turnsCounter < 9 && !flag_win){
+//            if(turnsCounter > 4);
+////                flag_win = checkWinner();
+//        }
 
         if(!flag_win){
             findViewById(R.id.No_Winner).setVisibility(View.VISIBLE);

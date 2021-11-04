@@ -432,4 +432,114 @@
         app:layout_constraintTop_toTopOf="@+id/cell_9"
         app:srcCompat="@drawable/o" />
 
+    <ImageView
+        android:id="@+id/left_vertical"
+        android:layout_width="392dp"
+        android:layout_height="384dp"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/mark3" />
+
+    <ImageView
+        android:id="@+id/middel_vertical"
+        android:layout_width="385dp"
+        android:layout_height="379dp"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/mark4" />
+
+    <ImageView
+        android:id="@+id/right_vertical"
+        android:layout_width="387dp"
+        android:layout_height="377dp"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/mark5" />
+
+    <ImageView
+        android:id="@+id/top_horizontal"
+        android:layout_width="388dp"
+        android:layout_height="382dp"
+        android:contentDescription="@android:string/untitled"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@drawable/mark3" />
+
+    <ImageView
+        android:id="@+id/middel_horizontal"
+        android:layout_width="385dp"
+        android:layout_height="381dp"
+        android:contentDescription="@android:string/untitled"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104"
+        app:srcCompat="@drawable/mark4" />
+
+    <ImageView
+        android:id="@+id/bottom_horizontal"
+        android:layout_width="387dp"
+        android:layout_height="382dp"
+        android:contentDescription="@android:string/untitled"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        app:srcCompat="@drawable/mark5" />
+
+    <ImageView
+        android:id="@+id/main_diagonal"
+        android:layout_width="391dp"
+        android:layout_height="378dp"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Xplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/mark1" />
+
+    <ImageView
+        android:id="@+id/secondary_diagonal"
+        android:layout_width="387dp"
+        android:layout_height="378dp"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Oplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/mark2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
