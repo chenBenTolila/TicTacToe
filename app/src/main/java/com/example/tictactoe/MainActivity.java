@@ -10,48 +10,48 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     int turnsCounter = 0;
     boolean flagEndGame = false;
-    ImageView cell1 =findViewById(R.id.cell_1);
-    ImageView cell2 =findViewById(R.id.cell_2);
-    ImageView cell3 =findViewById(R.id.cell_3);
-    ImageView cell4 =findViewById(R.id.cell_4);
-    ImageView cell5 =findViewById(R.id.cell_5);
-    ImageView cell6 =findViewById(R.id.cell_6);
-    ImageView cell7 =findViewById(R.id.cell_7);
-    ImageView cell8 =findViewById(R.id.cell_8);
-    ImageView cell9 =findViewById(R.id.cell_9);
-    ImageView Xcell1 =findViewById(R.id.X_cell_1);
-    ImageView Xcell2 =findViewById(R.id.X_cell_2);
-    ImageView Xcell3 =findViewById(R.id.X_cell_3);
-    ImageView Xcell4 =findViewById(R.id.X_cell_4);
-    ImageView Xcell5 =findViewById(R.id.X_cell_5);
-    ImageView Xcell6 =findViewById(R.id.X_cell_6);
-    ImageView Xcell7 =findViewById(R.id.X_cell_7);
-    ImageView Xcell8 =findViewById(R.id.X_cell_8);
-    ImageView Xcell9 =findViewById(R.id.X_cell_9);
-    ImageView Ocell1 =findViewById(R.id.O_cell_1);
-    ImageView Ocell2 =findViewById(R.id.O_cell_2);
-    ImageView Ocell3 =findViewById(R.id.O_cell_3);
-    ImageView Ocell4 =findViewById(R.id.O_cell_4);
-    ImageView Ocell5 =findViewById(R.id.O_cell_5);
-    ImageView Ocell6 =findViewById(R.id.O_cell_6);
-    ImageView Ocell7 = findViewById(R.id.O_cell_7);
-    ImageView Ocell8 =findViewById(R.id.O_cell_8);
-    ImageView Ocell9 =findViewById(R.id.O_cell_9);
+    ImageView cell1;
+    ImageView cell2;
+    ImageView cell3;
+    ImageView cell4;
+    ImageView cell5;
+    ImageView cell6;
+    ImageView cell7;
+    ImageView cell8;
+    ImageView cell9;
+    ImageView Xcell1;
+    ImageView Xcell2;
+    ImageView Xcell3;
+    ImageView Xcell4;
+    ImageView Xcell5;
+    ImageView Xcell6;
+    ImageView Xcell7;
+    ImageView Xcell8;
+    ImageView Xcell9;
+    ImageView Ocell1;
+    ImageView Ocell2;
+    ImageView Ocell3 ;
+    ImageView Ocell4;
+    ImageView Ocell5;
+    ImageView Ocell6;
+    ImageView Ocell7;
+    ImageView Ocell8;
+    ImageView Ocell9;
 
 
-    ImageView Oplay = findViewById(R.id.Oplay);
-    ImageView Xplay = findViewById(R.id.Xplay);
-    ImageView Xwin =findViewById(R.id.Xwins);
-    ImageView Owin =findViewById(R.id.Owins);
+    ImageView Oplay;
+    ImageView Xplay;
+    ImageView Xwin;
+    ImageView Owin ;
 
-    ImageView topHorizontal = findViewById(R.id.top_horizontal);
-    ImageView bottomHorizontal = findViewById(R.id.bottom_horizontal);
-    ImageView middleHorizontal = findViewById(R.id.middel_horizontal);
-    ImageView leftVertical = findViewById(R.id.left_vertical);
-    ImageView middleVertical = findViewById(R.id.middel_vertical);
-    ImageView rightVertical = findViewById(R.id.right_vertical);
-    ImageView mainDiagonal = findViewById(R.id.main_diagonal);
-    ImageView secondaryDiagonal = findViewById(R.id.secondary_diagonal);
+    ImageView topHorizontal;
+    ImageView bottomHorizontal;
+    ImageView middleHorizontal;
+    ImageView leftVertical;
+    ImageView middleVertical;
+    ImageView rightVertical;
+    ImageView mainDiagonal;
+    ImageView secondaryDiagonal;
 
 
     @Override
@@ -61,17 +61,62 @@ public class MainActivity extends AppCompatActivity {
         LetsPlay(); //// ?????
     }
 
+
     private boolean checkWinner()
     {
-        boolean wineer ;
-        if(turnsCounter %2 ==0)
+        boolean winner;
+        if(turnsCounter %2 == 0)
             winner = checkOWinner();
         else
-            winner = checkXwinner();
+            winner = checkXWinner();
+        // add no winner check
+        return winner;
     }
 
     private void LetsPlay()
     {
+        cell1 =findViewById(R.id.cell_1);
+        cell2 =findViewById(R.id.cell_2);
+        cell3 =findViewById(R.id.cell_3);
+        cell4 =findViewById(R.id.cell_4);
+        cell5 =findViewById(R.id.cell_5);
+        cell6 =findViewById(R.id.cell_6);
+        cell7 =findViewById(R.id.cell_7);
+        cell8 =findViewById(R.id.cell_8);
+        cell9 =findViewById(R.id.cell_9);
+        Xcell1 =findViewById(R.id.X_cell_1);
+        Xcell2 =findViewById(R.id.X_cell_2);
+        Xcell3 =findViewById(R.id.X_cell_3);
+        Xcell4 =findViewById(R.id.X_cell_4);
+        Xcell5 =findViewById(R.id.X_cell_5);
+        Xcell6 =findViewById(R.id.X_cell_6);
+        Xcell7 =findViewById(R.id.X_cell_7);
+        Xcell8 =findViewById(R.id.X_cell_8);
+        Xcell9 =findViewById(R.id.X_cell_9);
+        Ocell1 =findViewById(R.id.O_cell_1);
+        Ocell2 =findViewById(R.id.O_cell_2);
+        Ocell3 =findViewById(R.id.O_cell_3);
+        Ocell4 =findViewById(R.id.O_cell_4);
+        Ocell5 =findViewById(R.id.O_cell_5);
+        Ocell6 =findViewById(R.id.O_cell_6);
+        Ocell7 = findViewById(R.id.O_cell_7);
+        Ocell8 =findViewById(R.id.O_cell_8);
+        Ocell9 =findViewById(R.id.O_cell_9);
+
+
+        Oplay = findViewById(R.id.Oplay);
+        Xplay = findViewById(R.id.Xplay);
+        Xwin =findViewById(R.id.Xwins);
+        Owin =findViewById(R.id.Owins);
+
+        topHorizontal = findViewById(R.id.top_horizontal);
+        bottomHorizontal = findViewById(R.id.bottom_horizontal);
+        middleHorizontal = findViewById(R.id.middel_horizontal);
+        leftVertical = findViewById(R.id.left_vertical);
+        middleVertical = findViewById(R.id.middel_vertical);
+        rightVertical = findViewById(R.id.right_vertical);
+        mainDiagonal = findViewById(R.id.main_diagonal);
+        secondaryDiagonal = findViewById(R.id.secondary_diagonal);
 
         cell1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -318,6 +363,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     private boolean checkXWinner()
     {
         if(Xcell1.getVisibility() == View.VISIBLE && Xcell2.getVisibility() == View.VISIBLE && Xcell3.getVisibility() == View.VISIBLE) {
@@ -332,7 +378,61 @@ public class MainActivity extends AppCompatActivity {
             topHorizontal.setVisibility(View.VISIBLE);
             return true;
         }
+        return false;
 
     }
 
+    private boolean checkOWinner(){
+        if(Ocell1.getVisibility() == View.VISIBLE && Ocell2.getVisibility() == View.VISIBLE && Ocell3.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            topHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Ocell1.getVisibility() == View.VISIBLE && Ocell5.getVisibility() == View.VISIBLE && Ocell9.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            mainDiagonal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Ocell1.getVisibility() == View.VISIBLE && Ocell4.getVisibility() == View.VISIBLE && Ocell7.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            leftVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Ocell2.getVisibility() == View.VISIBLE && Ocell5.getVisibility() == View.VISIBLE && Ocell8.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            middleVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Ocell3.getVisibility() == View.VISIBLE && Ocell5.getVisibility() == View.VISIBLE && Ocell7.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            secondaryDiagonal.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Ocell3.getVisibility() == View.VISIBLE && Ocell6.getVisibility() == View.VISIBLE && Ocell9.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            rightVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Ocell4.getVisibility() == View.VISIBLE && Ocell5.getVisibility() == View.VISIBLE && Ocell6.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            middleHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Ocell7.getVisibility() == View.VISIBLE && Ocell8.getVisibility() == View.VISIBLE && Ocell9.getVisibility() == View.VISIBLE) {
+            Xplay.setVisibility(View.INVISIBLE); //???
+            Owin.setVisibility(View.VISIBLE);
+            bottomHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+        return false;
+    }
 }
