@@ -63,7 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean checkWinner()
     {
-        return false;
+        boolean wineer ;
+        if(turnsCounter %2 ==0)
+            winner = checkOWinner();
+        else
+            winner = checkXwinner();
     }
 
     private void LetsPlay()
@@ -226,7 +230,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -252,7 +257,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -278,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -304,7 +311,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
