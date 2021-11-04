@@ -88,12 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
         cell6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,6 +182,110 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else{
                             Ocell9.setVisibility(View.VISIBLE);
+                            Oplay.setVisibility(View.INVISIBLE);
+                            Xplay.setVisibility(View.VISIBLE);
+                        }
+                        ++turnsCounter;
+                        flagEndGame = checkWinner();
+                    }
+                }
+            }
+        });
+
+        cell2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flagEndGame)  // if the game ended
+                {
+                    return;
+                }
+                if(Xcell2.getVisibility() == View.INVISIBLE){
+                    if(Ocell2.getVisibility() == View.INVISIBLE) {
+                        if(turnsCounter % 2==0){
+                            Xcell2.setVisibility(View.VISIBLE);
+                            Xplay.setVisibility(View.INVISIBLE);
+                            Oplay.setVisibility(View.VISIBLE);
+                        }
+                        else{
+                            Ocell2.setVisibility(View.VISIBLE);
+                            Oplay.setVisibility(View.INVISIBLE);
+                            Xplay.setVisibility(View.VISIBLE);
+                        }
+                        ++turnsCounter;
+                        flagEndGame = checkWinner();
+                    }
+                }
+            }
+        });
+
+        cell3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flagEndGame)  // if the game ended
+                {
+                    return;
+                }
+                if(Xcell3.getVisibility() == View.INVISIBLE){
+                    if(Ocell3.getVisibility() == View.INVISIBLE) {
+                        if(turnsCounter % 2==0){
+                            Xcell3.setVisibility(View.VISIBLE);
+                            Xplay.setVisibility(View.INVISIBLE);
+                            Oplay.setVisibility(View.VISIBLE);
+                        }
+                        else{
+                            Ocell3.setVisibility(View.VISIBLE);
+                            Oplay.setVisibility(View.INVISIBLE);
+                            Xplay.setVisibility(View.VISIBLE);
+                        }
+                        ++turnsCounter;
+                        flagEndGame = checkWinner();
+                    }
+                }
+            }
+        });
+
+        cell4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flagEndGame)  // if the game ended
+                {
+                    return;
+                }
+                if(Xcell4.getVisibility() == View.INVISIBLE){
+                    if(Ocell4.getVisibility() == View.INVISIBLE) {
+                        if(turnsCounter % 2==0){
+                            Xcell4.setVisibility(View.VISIBLE);
+                            Xplay.setVisibility(View.INVISIBLE);
+                            Oplay.setVisibility(View.VISIBLE);
+                        }
+                        else{
+                            Ocell4.setVisibility(View.VISIBLE);
+                            Oplay.setVisibility(View.INVISIBLE);
+                            Xplay.setVisibility(View.VISIBLE);
+                        }
+                        ++turnsCounter;
+                        flagEndGame = checkWinner();
+                    }
+                }
+            }
+        });
+
+        cell5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flagEndGame)  // if the game ended
+                {
+                    return;
+                }
+                if(Xcell5.getVisibility() == View.INVISIBLE){
+                    if(Ocell5.getVisibility() == View.INVISIBLE) {
+                        if(turnsCounter % 2==0){
+                            Xcell5.setVisibility(View.VISIBLE);
+                            Xplay.setVisibility(View.INVISIBLE);
+                            Oplay.setVisibility(View.VISIBLE);
+                        }
+                        else{
+                            Ocell5.setVisibility(View.VISIBLE);
                             Oplay.setVisibility(View.INVISIBLE);
                             Xplay.setVisibility(View.VISIBLE);
                         }
