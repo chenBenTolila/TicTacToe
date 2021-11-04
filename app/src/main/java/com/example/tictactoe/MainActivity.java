@@ -10,6 +10,49 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     int turnsCounter = 0;
     boolean flagEndGame = false;
+    ImageView cell1 =findViewById(R.id.cell_1);
+    ImageView cell2 =findViewById(R.id.cell_2);
+    ImageView cell3 =findViewById(R.id.cell_3);
+    ImageView cell4 =findViewById(R.id.cell_4);
+    ImageView cell5 =findViewById(R.id.cell_5);
+    ImageView cell6 =findViewById(R.id.cell_6);
+    ImageView cell7 =findViewById(R.id.cell_7);
+    ImageView cell8 =findViewById(R.id.cell_8);
+    ImageView cell9 =findViewById(R.id.cell_9);
+    ImageView Xcell1 =findViewById(R.id.X_cell_1);
+    ImageView Xcell2 =findViewById(R.id.X_cell_2);
+    ImageView Xcell3 =findViewById(R.id.X_cell_3);
+    ImageView Xcell4 =findViewById(R.id.X_cell_4);
+    ImageView Xcell5 =findViewById(R.id.X_cell_5);
+    ImageView Xcell6 =findViewById(R.id.X_cell_6);
+    ImageView Xcell7 =findViewById(R.id.X_cell_7);
+    ImageView Xcell8 =findViewById(R.id.X_cell_8);
+    ImageView Xcell9 =findViewById(R.id.X_cell_9);
+    ImageView Ocell1 =findViewById(R.id.O_cell_1);
+    ImageView Ocell2 =findViewById(R.id.O_cell_2);
+    ImageView Ocell3 =findViewById(R.id.O_cell_3);
+    ImageView Ocell4 =findViewById(R.id.O_cell_4);
+    ImageView Ocell5 =findViewById(R.id.O_cell_5);
+    ImageView Ocell6 =findViewById(R.id.O_cell_6);
+    ImageView Ocell7 = findViewById(R.id.O_cell_7);
+    ImageView Ocell8 =findViewById(R.id.O_cell_8);
+    ImageView Ocell9 =findViewById(R.id.O_cell_9);
+
+
+    ImageView Oplay = findViewById(R.id.Oplay);
+    ImageView Xplay = findViewById(R.id.Xplay);
+    ImageView Xwin =findViewById(R.id.Xwins);
+    ImageView Owin =findViewById(R.id.Owins);
+
+    ImageView topHorizontal = findViewById(R.id.top_horizontal);
+    ImageView bottomHorizontal = findViewById(R.id.bottom_horizontal);
+    ImageView middleHorizontal = findViewById(R.id.middel_horizontal);
+    ImageView leftVertical = findViewById(R.id.left_vertical);
+    ImageView middleVertical = findViewById(R.id.middel_vertical);
+    ImageView rightVertical = findViewById(R.id.right_vertical);
+    ImageView mainDiagonal = findViewById(R.id.main_diagonal);
+    ImageView secondaryDiagonal = findViewById(R.id.secondary_diagonal);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,40 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void LetsPlay()
     {
-        ImageView cell1 =findViewById(R.id.cell_1);
-        ImageView cell2 =findViewById(R.id.cell_2);
-        ImageView cell3 =findViewById(R.id.cell_3);
-        ImageView cell4 =findViewById(R.id.cell_4);
-        ImageView cell5 =findViewById(R.id.cell_5);
-        ImageView cell6 =findViewById(R.id.cell_6);
-        ImageView cell7 =findViewById(R.id.cell_7);
-        ImageView cell8 =findViewById(R.id.cell_8);
-        ImageView cell9 =findViewById(R.id.cell_9);
-        ImageView Xcell1 =findViewById(R.id.X_cell_1);
-        ImageView Xcell2 =findViewById(R.id.X_cell_2);
-        ImageView Xcell3 =findViewById(R.id.X_cell_3);
-        ImageView Xcell4 =findViewById(R.id.X_cell_4);
-        ImageView Xcell5 =findViewById(R.id.X_cell_5);
-        ImageView Xcell6 =findViewById(R.id.X_cell_6);
-        ImageView Xcell7 =findViewById(R.id.X_cell_7);
-        ImageView Xcell8 =findViewById(R.id.X_cell_8);
-        ImageView Xcell9 =findViewById(R.id.X_cell_9);
-        ImageView Ocell1 =findViewById(R.id.O_cell_1);
-        ImageView Ocell2 =findViewById(R.id.O_cell_2);
-        ImageView Ocell3 =findViewById(R.id.O_cell_3);
-        ImageView Ocell4 =findViewById(R.id.O_cell_4);
-        ImageView Ocell5 =findViewById(R.id.O_cell_5);
-        ImageView Ocell6 =findViewById(R.id.O_cell_6);
-        ImageView Ocell7 = findViewById(R.id.O_cell_7);
-        ImageView Ocell8 =findViewById(R.id.O_cell_8);
-        ImageView Ocell9 =findViewById(R.id.O_cell_9);
-
-
-
-        ImageView Oplay = findViewById(R.id.Oplay);
-        ImageView Xplay = findViewById(R.id.Xplay);
-        ImageView Xwin =findViewById(R.id.Xwins);
-        ImageView Owin =findViewById(R.id.Owins);
 
         cell1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -108,7 +118,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -134,7 +145,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -160,7 +172,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -186,7 +199,8 @@ public class MainActivity extends AppCompatActivity {
                             Xplay.setVisibility(View.VISIBLE);
                         }
                         ++turnsCounter;
-                        flagEndGame = checkWinner();
+                        if(turnsCounter > 4)
+                            flagEndGame = checkWinner();
                     }
                 }
             }
@@ -296,4 +310,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    private boolean checkXWinner()
+    {
+        if(Xcell1.getVisibility() == View.VISIBLE && Xcell2.getVisibility() == View.VISIBLE && Xcell3.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            topHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+        if(Xcell1.getVisibility() == View.VISIBLE && Xcell2.getVisibility() == View.VISIBLE && Xcell3.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            topHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+    }
+
 }
