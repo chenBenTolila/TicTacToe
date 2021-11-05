@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             winner = true;
         }
         if(winner){
-
+            restart.setVisibility(View.VISIBLE);
         }
         return winner;
     }
@@ -336,6 +336,15 @@ public class MainActivity extends AppCompatActivity {
                             flagEndGame = checkWinner();
                     }
                 }
+            }
+        });
+
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_main);
+                turnsCounter = 0;
+                flagEndGame = false;
             }
         });
     }
