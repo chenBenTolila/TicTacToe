@@ -77,12 +77,10 @@ public class MainActivity extends AppCompatActivity {
         Ocell7 = findViewById(R.id.O_cell_7);
         Ocell8 =findViewById(R.id.O_cell_8);
         Ocell9 =findViewById(R.id.O_cell_9);
-
         Oplay = findViewById(R.id.Oplay);
         Xplay = findViewById(R.id.Xplay);
         Xwin =findViewById(R.id.Xwins);
         Owin =findViewById(R.id.Owins);
-
         topHorizontal = findViewById(R.id.top_horizontal);
         bottomHorizontal = findViewById(R.id.bottom_horizontal);
         middleHorizontal = findViewById(R.id.middel_horizontal);
@@ -344,6 +342,8 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
                 turnsCounter = 0;
                 flagEndGame = false;
+                restart.setVisibility(View.INVISIBLE);
+                LetsPlay();
             }
         });
     }
