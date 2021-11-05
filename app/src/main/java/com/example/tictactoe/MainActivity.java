@@ -367,15 +367,58 @@ public class MainActivity extends AppCompatActivity {
     private boolean checkXWinner()
     {
         if(Xcell1.getVisibility() == View.VISIBLE && Xcell2.getVisibility() == View.VISIBLE && Xcell3.getVisibility() == View.VISIBLE) {
-            Oplay.setVisibility(View.INVISIBLE);
+            Oplay.setVisibility(View.INVISIBLE);   // might delete
             Xwin.setVisibility(View.VISIBLE);
             topHorizontal.setVisibility(View.VISIBLE);
             return true;
         }
-        if(Xcell1.getVisibility() == View.VISIBLE && Xcell2.getVisibility() == View.VISIBLE && Xcell3.getVisibility() == View.VISIBLE) {
+
+        if(Xcell1.getVisibility() == View.VISIBLE && Xcell5.getVisibility() == View.VISIBLE && Xcell9.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);   // might delete
+            Xwin.setVisibility(View.VISIBLE);
+            mainDiagonal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell1.getVisibility() == View.VISIBLE && Xcell4.getVisibility() == View.VISIBLE && Xcell7.getVisibility() == View.VISIBLE) {
             Oplay.setVisibility(View.INVISIBLE);
             Xwin.setVisibility(View.VISIBLE);
-            topHorizontal.setVisibility(View.VISIBLE);
+            leftVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell2.getVisibility() == View.VISIBLE && Xcell5.getVisibility() == View.VISIBLE && Xcell8.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            middleVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell3.getVisibility() == View.VISIBLE && Xcell5.getVisibility() == View.VISIBLE && Xcell7.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            secondaryDiagonal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell3.getVisibility() == View.VISIBLE && Xcell6.getVisibility() == View.VISIBLE && Xcell9.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            rightVertical.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell4.getVisibility() == View.VISIBLE && Xcell5.getVisibility() == View.VISIBLE && Xcell6.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            middleHorizontal.setVisibility(View.VISIBLE);
+            return true;
+        }
+
+        if(Xcell7.getVisibility() == View.VISIBLE && Xcell8.getVisibility() == View.VISIBLE && Xcell9.getVisibility() == View.VISIBLE) {
+            Oplay.setVisibility(View.INVISIBLE);
+            Xwin.setVisibility(View.VISIBLE);
+            bottomHorizontal.setVisibility(View.VISIBLE);
             return true;
         }
         return false;
