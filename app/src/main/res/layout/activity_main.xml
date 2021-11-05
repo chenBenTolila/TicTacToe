@@ -8,23 +8,6 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/Xplay"
-        android:layout_width="395dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
-        android:contentDescription="@android:string/untitled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cell_8"
-        app:layout_constraintVertical_bias="0.372"
-        app:srcCompat="@drawable/xplay" />
-
-    <ImageView
         android:id="@+id/cell_1"
         android:layout_width="122dp"
         android:layout_height="119dp"
@@ -332,6 +315,20 @@
         app:srcCompat="@drawable/o" />
 
     <ImageView
+        android:id="@+id/No_Winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@android:string/untitled"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Xplay"
+        app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Xplay"
+        app:layout_constraintTop_toTopOf="@+id/Oplay"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/nowin" />
+
+    <ImageView
         android:id="@+id/Oplay"
         android:layout_width="397dp"
         android:layout_height="92dp"
@@ -351,8 +348,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/Xplay"
         app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/Xplay"
         app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:layout_constraintVertical_bias="0.527"
         app:srcCompat="@drawable/owin" />
 
     <ImageView
@@ -365,23 +364,28 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/Xplay"
         app:layout_constraintEnd_toEndOf="@+id/Xplay"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Xplay"
         app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:layout_constraintVertical_bias="0.527"
         app:srcCompat="@drawable/xwin" />
 
     <ImageView
-        android:id="@+id/No_Winner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/Xplay"
+        android:layout_width="395dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
         android:contentDescription="@android:string/untitled"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/Xplay"
-        app:layout_constraintEnd_toEndOf="@+id/Xplay"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/Xplay"
-        app:layout_constraintTop_toTopOf="@+id/Oplay"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/nowin" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cell_8"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/xplay" />
 
     <ImageView
         android:id="@+id/X_cell_8"
@@ -546,8 +550,8 @@
         android:id="@+id/playAgain_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#E67FA2"
         android:contentDescription="@android:string/untitled"
         android:text="Play Again"
