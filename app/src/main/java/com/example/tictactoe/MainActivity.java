@@ -22,9 +22,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LetsPlay(); //// ?????
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        LetsPlay();
+    }
 
     private boolean checkWinner()
     {
@@ -35,8 +39,11 @@ public class MainActivity extends AppCompatActivity {
             winner = checkXWinner();
         if(!winner && turnsCounter > 8) {
             Oplay.setVisibility(View.INVISIBLE);
-            findViewById(R.id.No_Winner).setVisibility(View.INVISIBLE);
+            findViewById(R.id.No_Winner).setVisibility(View.VISIBLE);
             winner = true;
+        }
+        if(winner){
+
         }
         return winner;
     }
