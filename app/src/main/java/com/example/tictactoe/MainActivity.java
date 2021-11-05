@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         Ocell8 =findViewById(R.id.O_cell_8);
         Ocell9 =findViewById(R.id.O_cell_9);
 
-
         Oplay = findViewById(R.id.Oplay);
         Xplay = findViewById(R.id.Xplay);
         Xwin =findViewById(R.id.Xwins);
