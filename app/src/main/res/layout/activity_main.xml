@@ -542,4 +542,21 @@
         app:layout_constraintVertical_bias="0.11"
         app:srcCompat="@drawable/mark2" />
 
+    <Button
+        android:id="@+id/playAgain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#4A7CA3"
+        android:contentDescription="@android:string/untitled"
+        android:text="Play Again"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Xplay"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

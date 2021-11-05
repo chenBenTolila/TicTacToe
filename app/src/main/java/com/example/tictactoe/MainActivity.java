@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView Ocell1, Ocell2, Ocell3, Ocell4, Ocell5, Ocell6, Ocell7, Ocell8, Ocell9;
     ImageView Oplay, Xplay, Xwin, Owin, topHorizontal, bottomHorizontal, middleHorizontal, leftVertical;
     ImageView middleVertical, rightVertical, mainDiagonal, secondaryDiagonal;
+    Button restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         rightVertical = findViewById(R.id.right_vertical);
         mainDiagonal = findViewById(R.id.main_diagonal);
         secondaryDiagonal = findViewById(R.id.secondary_diagonal);
+        restart = findViewById(R.id.playAgain_button);
 
         cell1.setOnClickListener(new View.OnClickListener() {
             @Override
