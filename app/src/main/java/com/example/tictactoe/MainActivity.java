@@ -69,7 +69,11 @@ public class MainActivity extends AppCompatActivity {
             winner = checkOWinner();
         else
             winner = checkXWinner();
-        // add no winner check
+        if(!winner && turnsCounter > 8) {
+            Oplay.setVisibility(View.INVISIBLE);
+            findViewById(R.id.No_Winner).setVisibility(View.INVISIBLE);
+            winner = true;
+        }
         return winner;
     }
 
