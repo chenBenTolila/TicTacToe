@@ -10,49 +10,11 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     int turnsCounter = 0;
     boolean flagEndGame = false;
-    ImageView cell1;
-    ImageView cell2;
-    ImageView cell3;
-    ImageView cell4;
-    ImageView cell5;
-    ImageView cell6;
-    ImageView cell7;
-    ImageView cell8;
-    ImageView cell9;
-    ImageView Xcell1;
-    ImageView Xcell2;
-    ImageView Xcell3;
-    ImageView Xcell4;
-    ImageView Xcell5;
-    ImageView Xcell6;
-    ImageView Xcell7;
-    ImageView Xcell8;
-    ImageView Xcell9;
-    ImageView Ocell1;
-    ImageView Ocell2;
-    ImageView Ocell3 ;
-    ImageView Ocell4;
-    ImageView Ocell5;
-    ImageView Ocell6;
-    ImageView Ocell7;
-    ImageView Ocell8;
-    ImageView Ocell9;
-
-
-    ImageView Oplay;
-    ImageView Xplay;
-    ImageView Xwin;
-    ImageView Owin ;
-
-    ImageView topHorizontal;
-    ImageView bottomHorizontal;
-    ImageView middleHorizontal;
-    ImageView leftVertical;
-    ImageView middleVertical;
-    ImageView rightVertical;
-    ImageView mainDiagonal;
-    ImageView secondaryDiagonal;
-
+    ImageView cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9;
+    ImageView Xcell1, Xcell2, Xcell3, Xcell4, Xcell5, Xcell6, Xcell7, Xcell8, Xcell9;
+    ImageView Ocell1, Ocell2, Ocell3, Ocell4, Ocell5, Ocell6, Ocell7, Ocell8, Ocell9;
+    ImageView Oplay, Xplay, Xwin, Owin, topHorizontal, bottomHorizontal, middleHorizontal, leftVertical;
+    ImageView middleVertical, rightVertical, mainDiagonal, secondaryDiagonal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
